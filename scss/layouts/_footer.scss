@@ -1,0 +1,167 @@
+.footer {
+  background: url(/images/Vector1m.png) left top,
+    url(/images/Vector2m.png) 175px 18px, url(/images/Vector3m.png) right 21px,
+    url(/images/Vector4m.png) center 24px, url(/images/Vector5m.png) right 103px,
+    url(/images/Vector6m.png) 17px bottom, url(/images/Vector7m.png) 155px 224px,
+    url(/images/Vector8m.png) right 149px, url(/images/Vector9m.png) 29px 88px,
+    url(/images/Vector10m.png) right 222px,
+    url(/images/Vector11m.png) 171px 58px;
+  background-repeat: no-repeat;
+  position: relative;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 32px 0 66px;
+  background-color: var(--color-primary);
+  @media screen and (min-width: $bp-tablet) {
+    padding: 56px 0;
+    background: url(/images/Vector1.png) left,
+      url(/images/Vector2.png) 240px top, url(/images/Vector3.png) 1031px top,
+      url(/images/Vector4.png) 650px top, url(/images/Vector5.png) right bottom,
+      url(/images/Vector6.png) 995px bottom,
+      url(/images/Vector7.png) 444px bottom, url(/images/Vector8.png),
+      url(/images/Vector9.png) 815px top, url(/images/Vector10.png) right bottom;
+    background-repeat: no-repeat;
+
+    background-color: var(--color-primary);
+  }
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    @media screen and (min-width: $bp-tablet) {
+      flex-direction: row;
+      gap: 20px;
+      align-items: flex-start;
+      text-align: start;
+    }
+  }
+  &__nav,
+  &__adress {
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    @media screen and (min-width: $bp-tablet) {
+      flex-basis: 50%;
+      gap: 20px;
+      flex-direction: row;
+    }
+  }
+  &__logo {
+    flex-grow: 1;
+    margin-bottom: 42px;
+    @media screen and (min-width: $bp-tablet) {
+      margin-bottom: 0;
+    }
+  }
+  &__menu {
+    flex-grow: 1;
+    margin-bottom: 16px;
+    @media screen and (min-width: $bp-tablet) {
+      margin-bottom: 0;
+    }
+  }
+  &__menu__text:not(:last-child) {
+    margin-bottom: 16px;
+  }
+  &__text {
+    color: var(--color-white);
+    font-size: 14px;
+    line-height: 1.17;
+    text-decoration: none;
+    transition: color 0.3s;
+    @media screen and (min-width: $bp-tablet) {
+      font-size: 16px;
+    }
+  }
+  &__text__tablet {
+    display: none;
+    @media screen and (min-width: $bp-tablet) {
+      display: block;
+    }
+  }
+  &__adress__text {
+    display: none;
+    @media screen and (min-width: $bp-tablet) {
+      display: block;
+      color: var(--color-white);
+      font-size: 16px;
+      line-height: 1.17;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+  }
+  &__text:hover {
+    color: var(--color-brand);
+    line-height: 1.17;
+    text-decoration: none;
+  }
+  &__adress__text {
+    margin-bottom: 16px;
+  }
+  &__adress__info {
+    flex-grow: 1;
+    text-align: end;
+  }
+  &__adress__link {
+    max-width: 192px;
+    flex-grow: 1;
+  }
+  &__confidence {
+    color: #747272;
+    font-size: 12px;
+    line-height: 1.5;
+    margin-top: 8px;
+    text-align: end;
+    max-width: 325px;
+    text-align: center;
+    @media screen and (min-width: $bp-tablet) {
+      text-align: end;
+      font-size: 13px;
+      line-height: 1.17;
+      margin-top: 16px;
+    }
+  }
+  &__icon {
+    fill: var(--color-white);
+    width: 32px;
+    height: 32px;
+    @media screen and (min-width: $bp-tablet) {
+      width: 42px;
+      height: 42px;
+    }
+  }
+  &__social__icon {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    @media screen and (min-width: $bp-tablet) {
+      gap: 24px;
+      justify-content: left;
+    }
+  }
+  &::before {
+    @media screen and (min-width: $bp-tablet) {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      background-image: url('../images/footer\ element.png');
+      content: '';
+      width: 247px;
+      height: 152px;
+    }
+    @media screen and (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('../images/footer\ element@2x.png');
+    }
+  }
+  &__confidence__mobile {
+    min-width: 300px;
+    text-align: start;
+    margin-bottom: 16px;
+    @media screen and (min-width: $bp-tablet) {
+      display: none;
+    }
+  }
+}

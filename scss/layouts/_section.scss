@@ -1,0 +1,13 @@
+.section {
+  padding: 20px 0;
+  position: relative;
+  &__contact {
+    padding-bottom: 0;
+  }
+  @media screen and (min-width: $bp-tablet) {
+    padding: 48px 0;
+    &__contact {
+      padding-bottom: 96px;
+    }
+  }
+}

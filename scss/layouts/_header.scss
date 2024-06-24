@@ -1,0 +1,67 @@
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #ffffff40;
+  &__section {
+    width: 100%;
+    max-width: 1488px;
+    margin: 0 auto;
+    padding: 0 24px;
+    justify-content: space-around;
+    display: flex;
+  }
+
+  &__container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 32px 0px 32px 0px;
+    max-width: 1240px;
+    flex-grow: 1;
+  }
+  &__nav {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    gap: 40px;
+  }
+  &__menu {
+    display: none;
+    @media screen and (min-width: $bp-desktop) {
+      display: flex;
+      gap: 56px;
+      flex-grow: 1;
+      justify-content: flex-end;
+      flex-wrap: wrap;
+    }
+  }
+  &__icon {
+    display: none;
+    @media screen and (min-width: $bp-desktop) {
+      display: flex;
+      flex-grow: 1;
+      gap: 32px;
+      justify-content: flex-end;
+      align-items: center;
+    }
+  }
+  &__social {
+    fill: var(--color-primary);
+    &:hover {
+      fill: var(--color-brand);
+    }
+  }
+  &__burger {
+    background-color: transparent;
+    border: none;
+    width: 24px;
+    height: 24px;
+    padding: 5px 2px;
+    fill: var(--color-white);
+    @media screen and (min-width: $bp-desktop) {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,25 @@
+@import './utils/fonts';
+@import './utils/variables';
+@import './utils/utils';
+
+@import './_base';
+
+@import './components/buttons';
+@import './components/carousel-button';
+@import './components/links';
+@import './components/pagination';
+
+@import './layouts/about-section';
+@import './layouts/background';
+@import './layouts/contact-section';
+@import './layouts/container';
+@import './layouts/footer';
+@import './layouts/form';
+@import './layouts/header';
+@import './layouts/h2';
+@import './layouts/hero-section';
+@import './layouts/modal';
+@import './layouts/mobile-menu';
+@import './layouts/section';
+@import './layouts/procedure-section';
+@import './layouts/why-section';

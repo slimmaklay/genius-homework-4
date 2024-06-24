@@ -1,0 +1,44 @@
+.why-section {
+  padding-top: 0;
+  @media screen and (min-width: $bp-desktop) {
+    padding-top: 176px;
+  }
+  &__list {
+    max-width: 316px;
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    justify-content: center;
+    gap: 16px;
+    color: var(--color-black);
+    line-height: 1.33;
+    @media screen and (min-width: $bp-desktop) {
+      display: flex;
+      flex-direction: row;
+      max-width: 100%;
+      gap: 56px;
+    }
+  }
+  &__card {
+    background-color: var(--color-white);
+    box-shadow: 0px 4px 4px 0px #a8c6f561;
+
+    border-radius: 24px;
+    padding: 20px 32px;
+    text-align: center;
+    @media screen and (min-width: $bp-desktop) {
+      border-radius: 32px;
+      padding: 24px 32px;
+    }
+  }
+  &__icon {
+    fill: var(--color-brand);
+    max-height: 48px;
+  }
+  &__text {
+    text-align: center;
+    &:not(:last-child) {
+      margin-bottom: 24px;
+    }
+  }
+}
