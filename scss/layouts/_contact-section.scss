@@ -9,16 +9,16 @@
     }
   }
   &__form {
-    background: url(/images/Vector1modm.png) left 267px,
-      url(/images/Vector2modm.png) 15px top,
-      url(/images/Vector3modm.png) right 20px,
-      url(/images/Vector4modm.png) right 26px,
-      url(/images/Vector5modm.png) 110px bottom,
-      url(/images/Vector6modm.png) right 250px,
-      url(/images/Vector7modm.png) 124px 98px,
-      url(/images/Vector8modm.png) left 64px,
-      url(/images/Vector9modm.png) left 216px,
-      url(/images/Vector10modm.png) right 65px;
+    background: url(../images/Vector1modm.png) left 267px,
+      url(../images/Vector2modm.png) 15px top,
+      url(../images/Vector3modm.png) right 20px,
+      url(../images/Vector4modm.png) right 26px,
+      url(../images/Vector5modm.png) 110px bottom,
+      url(../images/Vector6modm.png) right 250px,
+      url(../images/Vector7modm.png) 124px 98px,
+      url(../images/Vector8modm.png) left 64px,
+      url(../images/Vector9modm.png) left 216px,
+      url(../images/Vector10modm.png) right 65px;
     background-repeat: no-repeat;
     background-color: var(--color-primary);
     border: 2px solid var(--color-secondary);
@@ -28,11 +28,11 @@
     border-radius: 24px;
     margin: 0 auto;
     @media screen and (min-width: $bp-tablet) {
-      background: url(/images/Vector1mod.png) left top,
-        url(/images/Vector2mod.png) 230px top, url(/images/Vector3mod.png),
-        url(/images/Vector4mod.png) right 203px,
-        url(/images/Vector5mod.png) 166px bottom,
-        url(/images/Vector6mod.png) left 25px;
+      background: url(../images/Vector1mod.png) left top,
+        url(/..images/Vector2mod.png) 230px top, url(../images/Vector3mod.png),
+        url(../images/Vector4mod.png) right 203px,
+        url(../images/Vector5mod.png) 166px bottom,
+        url(../images/Vector6mod.png) left 25px;
       background-repeat: no-repeat;
       padding: 44px 52px;
       border: 4px solid var(--color-secondary);

@@ -33,18 +33,9 @@
         top: 346px;
         right: 295px;
       }
-      // display: block;
-      // content: url(../images/Star\ 3.png);
-      // position: absolute;
-      // left: 1213px;
-      // top: 270px;
-      // animation-name: zoom;
-      // animation-duration: 1s;
-      // animation-iteration-count: infinite;
     }
   }
   &__text {
-    /* margin-bottom: 40px; */
     color: var(--color-primary);
     font-size: 18px;
     line-height: 1.17;
@@ -68,14 +59,6 @@
   }
   &__photo__container {
     &::after {
-      // display: block;
-      // content: url(../images/Star\ 1.png);
-      // position: absolute;
-      // left: 858px;
-      // top: 346px;
-      // animation-name: spin;
-      // animation-duration: 3s;
-      // animation-iteration-count: infinite;
       display: none;
 
       @media screen and (min-width: $bp-desktop) {
